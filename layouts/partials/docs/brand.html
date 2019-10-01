@@ -1,0 +1,9 @@
+
+<h2 class="book-brand">
+  <a href="{{ .Site.BaseURL }}">
+    {{- with .Site.Params.RtfmLogo -}}
+    <img src="{{ . | relURL }}" alt="Logo" />
+    {{- end -}}
+    <span>{{ .Site.Title }}</span>
+  </a>
+</h2>
