@@ -3,7 +3,7 @@
 [![Hugo](https://img.shields.io/badge/hugo-0.55-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-### [Hugo](https://gohugo.io) documentation theme as simple as plain book
+### [Hugo](https://gohugo.io) documentation theme 
 
 ![Screenshot](https://github.com/alex-shpak/hugo-book/blob/master/images/screenshot.png)
 
@@ -33,28 +33,13 @@
 Navigate to your hugo project root and run:
 
 ```
-git submodule add https://github.com/alex-shpak/hugo-book themes/book
+git submodule add https://github.com/denzalman/rtfm-template themes/rtfm
 ```
 
-Then run hugo (or set `theme = "book"`/`theme: book` in configuration file)
-
-```
-hugo server --minify --theme book
-```
-
-### Creating site from scratch
-
-Below is example how to create new site from scratch
+Then run hugo (or set `theme = "rtfm"`/`theme: rtfm` in configuration file)
 
 ```sh
-hugo new site mydocs; cd mydocs
-git init
-git submodule add https://github.com/alex-shpak/hugo-book themes/book
-cp -R themes/book/exampleSite/content .
-```
-
-```sh
-hugo server --minify --theme book
+hugo server --minify --theme rtfm
 ```
 
 ## Menu
