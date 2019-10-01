@@ -3,19 +3,14 @@
 
 name = "rtfm"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/denzalman/rtfm-template/blob/master/LICENSE"
 description = ""
-homepage = "http://example.com/"
+homepage = "https://github.com/denzalman/rtfm-template"
 tags = []
 features = []
 min_version = "0.41"
 
 [author]
-  name = ""
+  name = "Den Zalman"
   homepage = ""
 
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
