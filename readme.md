@@ -1,18 +1,15 @@
-# Hugo Book Theme
+# Hugo RTFM Theme
 
 [![Hugo](https://img.shields.io/badge/hugo-0.55-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ### [Hugo](https://gohugo.io) documentation theme 
 
-![Screenshot](https://github.com/alex-shpak/hugo-book/blob/master/images/screenshot.png)
-
 - [Features](#features)
 - [Installation](#installation)
 - [Menu](#menu)
 - [Configuration](#configuration)
 - [Shortcodes](#shortcodes)
-- [Contributing](#contributing)
 
 ## Features
 
@@ -77,10 +74,10 @@ headless = true
 - [Blog](/posts)
 ```
 
-And Enable it by settings `BookMenuBundle: /menu` in Site configuration
+And Enable it by settings `RtfmMenuBundle: /menu` in Site configuration
 
-- [Example menu](https://github.com/alex-shpak/hugo-book/blob/master/exampleSite/content/menu/index.md)
-- [Example config file](https://github.com/alex-shpak/hugo-book/blob/master/exampleSite/config.yaml)
+Some useful info about leafs:
+
 - [Leaf bundles](https://gohugo.io/content-management/page-bundles/)
 
 ## Blog
@@ -91,8 +88,7 @@ Simple blog supported for section `posts`
 
 ### Site Configuration
 
-There are few configuration options you can add to your `config.toml` file.  
-You can also see `yaml` example [here](https://github.com/alex-shpak/hugo-book/blob/master/exampleSite/config.yaml).
+There are few configuration options you can add to your `config.toml` file.
 
 ```toml
 # (Optional) Set this to true if you use capital letters in file names
@@ -114,27 +110,27 @@ BookToC = 3
 
 # (Optional, default none) Set the path to a logo for the book. If the logo is
 # /static/logo.png then the path would be 'logo.png'
-BookLogo = 'logo.png'
+RtfmLogo = 'logo.png'
 
 # (Optional, default none) Set leaf bundle to render as side menu
 # When not specified file structure and weights will be used
-BookMenuBundle = '/menu'
+RtfmMenuBundle = '/menu'
 
 # (Optional, default docs) Specify section of content to render as menu
 # You can also set value to "*" to render all sections to menu
-BookSection = 'docs'
+RtfmSection = 'docs'
 
 # (Optional) This value is duplicate of $link-color for making active link highlight in menu bundle mode
 # BookMenuBundleActiveLinkColor = '\#004ed0'
 
 # Set source repository location.
 # Used for 'Last Modified' and 'Edit this page' links.
-BookRepo = 'https://github.com/alex-shpak/hugo-book'
+RtfmRepo = 'https://github.com/denzalman/rtfm-template'
 
 # Enable 'Edit this page' links for 'doc' page type.
 # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
 # Path must point to 'content' directory of repo.
-BookEditPath = 'edit/master/exampleSite/content'
+RtfmEditPath = 'edit/master/exampleSite/content'
 
 # (Optional, default January 2, 2006) Configure the date format used on the pages
 # - In git information
@@ -261,16 +257,3 @@ x = \begin{cases}
 \end{cases}
 {{< /katex >}}
 ```
-
-## Contributing
-
-### [Extra credits to contributors](https://github.com/alex-shpak/hugo-book/graphs/contributors)
-
-Contributions are welcome and I will review and consider pull requests.  
-Primary goals are:
-
-- Keep it simple
-- Keep minimal (or zero) default configuration
-- Avoid interference with user-defined layouts
-
-Feel free to open issue if you missing some configuration or customisation option.
